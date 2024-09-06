@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>x</joinTable>
+        </blockInfo>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <columns>
+            <field>Consent_Assignment__c.Status__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Consent_Assignment__c.Is_Current__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>equals</operator>
+                <value>1</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Consent Profiles with Consent</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntityCustomEntity$Consent_Profile__c$Consent_Assignment__c@Consent_Assignment__c.Consent_Type__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>CUST_CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>fkx</joinTable>
+        </blockInfo>
+        <columns>
+            <field>FIRST_NAME</field>
+        </columns>
+        <columns>
+            <field>LAST_NAME</field>
+        </columns>
+        <columns>
+            <field>EMAIL</field>
+        </columns>
+        <format>Summary</format>
+        <name>Contacts &amp; Accounts and Consent</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>ContactList@Contact.Consent_Profile__c</reportType>
+        <scope>my</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>LAST_ACTIVITY</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>x</joinTable>
+    </blockInfo>
+    <description>Account/Contact Records with current Consent Assignments (either granted or denied.)</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contacts and Consent Assignments</name>
+    <params>
+        <name>lsk</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Consent_Profile__c$Consent_Assignment__c@Consent_Assignment__c.Consent_Type__c</reportType>
+    <showDetails>true</showDetails>
+</Report>
