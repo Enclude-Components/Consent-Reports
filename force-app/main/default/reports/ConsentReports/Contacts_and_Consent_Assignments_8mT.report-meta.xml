@@ -68,10 +68,6 @@
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Contacts and Consent Assignments</name>
-    <params>
-        <name>lsk</name>
-        <value>1</value>
-    </params>
     <reportType>CustomEntityCustomEntity$enc_con__Consent_Profile__c$enc_con__Consent_Assignment__c@enc_con__Consent_Assignment__c.enc_con__Consent_Type__c</reportType>
     <showDetails>true</showDetails>
 </Report>
