@@ -48,7 +48,7 @@
         <format>Summary</format>
         <name>Contacts &amp; Accounts and Consent</name>
         <reportType>ContactList@Contact.enc_con__Consent_Profile__c</reportType>
-        <scope>my</scope>
+        <scope>organization</scope>
         <showGrandTotal>true</showGrandTotal>
         <showSubTotals>true</showSubTotals>
         <timeFrameFilter>
