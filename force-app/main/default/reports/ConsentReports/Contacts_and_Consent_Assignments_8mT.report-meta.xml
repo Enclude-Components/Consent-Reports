@@ -47,10 +47,6 @@
         </columns>
         <format>Summary</format>
         <name>Contacts &amp; Accounts and Consent</name>
-        <params>
-            <name>co</name>
-            <value>1</value>
-        </params>
         <reportType>ContactList@Contact.enc_con__Consent_Profile__c</reportType>
         <scope>my</scope>
         <showGrandTotal>true</showGrandTotal>
