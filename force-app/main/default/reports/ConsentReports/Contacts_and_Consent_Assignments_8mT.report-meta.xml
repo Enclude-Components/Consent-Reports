@@ -22,10 +22,6 @@
         </filter>
         <format>Summary</format>
         <name>Consent Profiles with Consent</name>
-        <params>
-            <name>co</name>
-            <value>1</value>
-        </params>
         <reportType>CustomEntityCustomEntity$enc_con__Consent_Profile__c$enc_con__Consent_Assignment__c@enc_con__Consent_Assignment__c.enc_con__Consent_Type__c</reportType>
         <scope>organization</scope>
         <showGrandTotal>true</showGrandTotal>
