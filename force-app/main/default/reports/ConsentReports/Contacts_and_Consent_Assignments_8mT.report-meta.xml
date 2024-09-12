@@ -9,11 +9,11 @@
             <field>FK_NAME</field>
         </columns>
         <columns>
-            <field>Consent_Assignment__c.Status__c</field>
+            <field>enc_con__Consent_Assignment__c.enc_con__Status__c</field>
         </columns>
         <filter>
             <criteriaItems>
-                <column>Consent_Assignment__c.Is_Current__c</column>
+                <column>enc_con__Consent_Assignment__c.enc_con__Is_Current__c</column>
                 <columnToColumn>false</columnToColumn>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
@@ -26,7 +26,7 @@
             <name>co</name>
             <value>1</value>
         </params>
-        <reportType>CustomEntityCustomEntity$Consent_Profile__c$Consent_Assignment__c@Consent_Assignment__c.Consent_Type__c</reportType>
+        <reportType>CustomEntityCustomEntity$enc_con__Consent_Profile__c$enc_con__Consent_Assignment__c@enc_con__Consent_Assignment__c.enc_con__Consent_Type__c</reportType>
         <scope>organization</scope>
         <showGrandTotal>true</showGrandTotal>
         <showSubTotals>true</showSubTotals>
@@ -55,7 +55,7 @@
             <name>co</name>
             <value>1</value>
         </params>
-        <reportType>ContactList@Contact.Consent_Profile__c</reportType>
+        <reportType>ContactList@Contact.enc_con__Consent_Profile__c</reportType>
         <scope>my</scope>
         <showGrandTotal>true</showGrandTotal>
         <showSubTotals>true</showSubTotals>
@@ -80,6 +80,6 @@
         <name>lsk</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntityCustomEntity$Consent_Profile__c$Consent_Assignment__c@Consent_Assignment__c.Consent_Type__c</reportType>
+    <reportType>CustomEntityCustomEntity$enc_con__Consent_Profile__c$enc_con__Consent_Assignment__c@enc_con__Consent_Assignment__c.enc_con__Consent_Type__c</reportType>
     <showDetails>true</showDetails>
 </Report>
